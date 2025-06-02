@@ -1,64 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/style.css">
-    <title>Sabrina López Propiedades</title>
-
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Inicio | Sabrina López Propiedades - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    
 </head>
-<body id="body">
-    <header id="header">
-     <h1>Sabrina López Propiedades</h1>
-     <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./pages/Propiedades.html">Propiedades</a></li>
-            <li><a href="./pages/servicios.html">Servicios</a></li>
-            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        <ul>
+    <body>
+        <header>
+            <div class="container flex-space-between">
+        <h1> Sabrina López Propiedades</h1>
+        <nav>
+            <ul class="nav-list flex-row">
+
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="propiedades.html">Propiedades</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
-    
-    </header>
-    <main>
-
-    <section id="inicio" class="banner">
-        <h2>Encuentra el hogar de tus sueños</h2>
-        <p>Compra, vende o alquila con los mejores asesores inmobiliarios.</p>
-    </section>
-    
-    <section>
-    <h3>Propiedades destacadas</h3>
-    <article>
-        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5tb2JpbGlhcmlhfGVufDB8fDB8fHww" alt="">
-        <h4>Casa en Palermo</h4>
-        <p>3 ambientes, patio y cochera. Excelente ubicacon.</p>
-        
-    
-    </article>
-    </section>
+        </div>
+        </header>
+        <main class="grid-layout">
+            <section class="hero">
+            <h2>Bienvenidos a tu nuevo hogar</h2>
+            <p>Tu nuevo hogar te esta esperando. Encontrá la propiedad ideal con nuestra ayuda profesional.</p>
+            <img src="https://plus.unsplash.com/premium_photo-1661774764643-e6ddb7074682?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29udGFjdG8lMjBpbm1vYmlsaWFyaWF8ZW58MHx8MHx8fDA%3D" alt="">
+       </section>
+       <section class="destacadas">
+        <h2>Propiedades Destacadas</h2>
+        <div class="cards flex-wrap">
+            <article class="card">
+                <h3>Depto 3 ambientes</h3>
+                <img src="https://media.istockphoto.com/id/1463995735/es/foto/entrada-de-la-puerta-principal-a-la-casa-con-hassock-gabinetes-gancho-para-abrigo-y-espejo-en.webp?a=1&b=1&s=612x612&w=0&k=20&c=7mRcKY4TBHktKdobKl0aoF1ABB86puexP8Iep5v8Z6U=" alt="">
+                <p>Ubicado en Palermo, balcón al frente.</p>
+            </article>
+            <article class="card">
+                <h3>Casa 5 Ambientes</h3>
+                <img src="https://images.unsplash.com/photo-1646379940384-7a5d7b54d104?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGNhc2ElMjA1JTIwYW1iaWVudGVzfGVufDB8fDB8fHww" alt="">
+                <p>Con jardín y pileta en Zona Norte.</p>
+            </article>
+        </div>
+       </section>
         </main>
-        <footer id="footer">
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.483047384349!2d-58.37701382514589!3d-34.61723145821047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2af83c8c07%3A0x5139a6fc68d1c76d!2sAv.%20Independencia%20%26%20Per%C3%BA%2C%20C1099%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1746416529422!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-        <section class="footerCopy">
-
-        </section>
-        <section class="footerRedes">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-
-        </section>
-        
-     
-        </footer>      
-        <p>&reg; 2025 Sabrina López Propiedades - Contacto: info@inmolopez.com</p>
-        
-    </footer>
-</body>
-<html>
+        <footer>
+            <p>&copy;2025 Sabrina López Propiedades</p>
+        </footer>
+    </body>
+    <html>
 

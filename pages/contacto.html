@@ -7,42 +7,53 @@
     <title>Contacto</title>
 </head>
 <body>
-    <header id="header">
+    <header>
+        <div class="container flex-space-between">
         <h1>Sabrina López Propiedades</h1>
-        <nav id="nav">
-            <ul>
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="Propiedades.html">Propiedades</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
+        <nav>
+            <ul class="nav-list flex-row">
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="propiedades.html">Propiedades</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-
             </ul>
         </nav>
+        </div>
     </header>
-<main>
-    <h2>Contacto</h2>
-    <p>Completá el formulario o escribir directamente a nuestro correo.</p>
-<form action="#" method="post">
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="Nombre">
+<main class="grid-layout">
+    <section class="hero">
+     <h2>Contacto</h2>
+    <p>Podés comunicarte con nosotros al Whatsapp <strong> 1145673751</strong> o por mail a <em>info@sabrinalopezpropiedades.com</em></p>
+    <img src="https://plus.unsplash.com/premium_photo-1716762544223-831e3c1e8204?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHRlbGVmb25vJTIweSUyMGNvbnRhY3RvJTIwZGUlMjBpbm1vYmlsaWFyaWF8ZW58MHx8MHx8fDA%3D" alt="">
+    </section>
+<section class="contacto container">
+    <div class="grid-contacto">
+        <form class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email">
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" name="mensaje" rows="5" required></textarea>
 
-    <label for="mensaje">Mensaje</label>
-    <textarea name="mensaje" id="mensaje" rows="4" cols="40"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
 
-    <input type="submit" value="Enviar">
-</form>
+        <div class="info-contacto">
+            <h3>Datos de contacto</h3>
+            <p>Dirección: Av. Los Incas 1234, CABA</p>
+            <p>Teléfono: 1145673751</p>
+            <p>Email:contacto@sabrinalopezpropiedades.com</p>
+            <p>Horario: Lunes a Viernes de 10 a 18hs</p>
 
-<p>O escribinos a:<strong>info@inmolopez.com</strong> </p>
-<p>Teléfono: <strong>+54 112345 5555</strong></p>
-<p>Dirección: Av. Callao 1515, CABA</p>
-</main>
+        </div>
+        </div>
+        </section>
 
-<footer>
-    <p>2025 Sabrina López Propiedades</p>
-</footer>
-</body>
-</html>
+    </main>
+        <footer>
+            <p>&copy; 2025 Sabrina López Propiedades</p>
+        </footer>
+    </body>
+ </html>
+        
