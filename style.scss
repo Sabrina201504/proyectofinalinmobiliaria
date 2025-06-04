@@ -5,7 +5,25 @@ $color-texto: #333;
 $color-fondo: #fff;
 $fuente-principal: arial, sens-serif;
 
+//mixins 
 
+@mixin transition-suave {
+    transition: all 0.3s ease-in-out;
+
+}
+
+@mixin texto-central {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+//reset
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 // estilos generales
 body {
@@ -14,6 +32,7 @@ body {
     color: $color-texto;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 .container {
@@ -31,6 +50,7 @@ header {
     background-color: $color-principal;
     color: white;
     padding: 10px 0;
+    font-size: 2rem;
 }
 
 .container {
@@ -43,7 +63,7 @@ nav {
     .nav-list {
         list-style: none;
         margin: 0;
-        padding: 0
+        padding: 0;
         gap: 15px;
       
     li a {
@@ -56,8 +76,8 @@ nav {
           } 
          }
         } 
-       }
-      }
+       }    
+      
 
 //seccion hero
 .hero {
@@ -129,4 +149,15 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 40px;
+}
+form {
+input, textarea {
+    @include transition-suave;
+    border: 1px solid #ccc;
+}
+}
+
+//animaciones
+.animar-fade {
+    animation: fadeIn 2s ease-in-out;
 }

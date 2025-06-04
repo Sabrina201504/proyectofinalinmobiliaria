@@ -3,39 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Propiedades en venta y alquiler de Sabrina López Propiedades. Casas, departamentos y lotes en Buenos Aires.">
+    <title>Propiedades | Sabrina López Propiedades</title>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="libs/animate.css/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css">
-    <title>Propiedades - Sabrina López Propiedades</title>
+    
 </head>
 <body>
     
-   <header>
+   <header class="container-fluid bg-dark text-white p-3">
+    <h1 class="text-center">Sabrina López Propiedades</h1>
+    <nav class="nav justify-content-center">
     <div class="container flex-space-between">
         <h1>Sabrina López Propiedades</h1>
+        <p>Tu inmobiliaria de confianza</p>
     <nav>
         <ul class="nav-list flex-row">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="propiedades.html">Propiedades</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+           <a class="nav-link text-white" ></a> <a href="../index.html">Inicio</a>
+           <a class="nav-link text-white" ></a> <a href="nosotros.html">Nosotros</a>
+           <a class="nav-link text-white" ></a> <a href="propiedades.html">Propiedades</a>
+           <a class="nav-link text-white" ></a> <a href="servicios.html">Servicios</a>
+           <a class="nav-link text-white" ></a> <a href="contacto.html">Contacto</a>
         </ul>
     </nav>
     </div>
    </header>
     
    <main class="grid-layout">
-    <section class="hero">
+    <main class="container my-4">Propiedades Destacadas</h2>
+        <div class="row">
+        <section class="hero">
     <h2>Propiedades en venta y Alquiler</h2>
     <p>Elegí entre nuestra amplia oferta de propiedades urbanas, suburbanas y rurales.</p>
     </section>
 
     <section class="grid-propiedades container">
         <article class="propiedad">
-            <h3>Casa en Villa Urquiza</h3>
+            <h3 class="card-title">Casa en Villa Urquiza</h3>
             <img src="https://images.unsplash.com/photo-1724228319129-7cc33c9e8a2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FzYSUyMDMlMjBhbWJpZW50ZXN8ZW58MHx8MHx8fDA%3D" alt="">
-            <p>4 ambientes, 2 baños, patio y cochera.</p>
+            <p class="card-text">4 ambientes, 2 baños, patio y cochera.</p>
+        <a href="#" class="btn btn-primary">Ver más</a>
         </article>
-
+       </div>
         <article class="propiedad">
             <h3>Departamento en Recoleta</h3>
             <img src="https://media.istockphoto.com/id/1600607535/es/foto/vista-lateral-de-un-interior-cl%C3%A1sico-y-elegante-vac%C3%ADo-un-comedor-moderno-pero-cl%C3%A1sico-con-un.webp?a=1&b=1&s=612x612&w=0&k=20&c=n8yUdFt4yViJQVqsuyqhkFJFM8nQUPorX8HXGbwnfrE=" alt="">
@@ -50,9 +60,11 @@
     
 </section>
 </main>
-    <footer>
+    <footer class="bg-dark text-white text-center p-3">
         <p>&copy; 2025 Sabrina López Propiedades</p>
     </footer>
+
+    <script src="js/main.js"></script>
    
 </body>
 </html>
