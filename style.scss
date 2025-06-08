@@ -1,9 +1,11 @@
 // variables
-$color-principal: #2c3e50;
-$color-secundario: #ecf0f1;
-$color-texto: #333;
-$color-fondo: #fff;
+$color-primario: #002b5b;
+$color-secundario: #007BFF;
+$color-texto: #222222;
+$color-fondo: #F8F9FA;
 $fuente-principal: arial, sens-serif;
+$color-footer:#002b5b;
+$color-footer-texto: #ffffff;
 
 //mixins 
 
@@ -28,7 +30,7 @@ $fuente-principal: arial, sens-serif;
 // estilos generales
 body {
     font-family: $fuente-principal;
-    background-color: $color-secundario;
+    background-color: $color-fondo;
     color: $color-texto;
     margin: 0;
     padding: 0;
@@ -47,10 +49,29 @@ h1, h2, h3 {
 
 //header
 header {
-    background-color: $color-principal;
-    color: white;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     padding: 10px 0;
     font-size: 2rem;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+        font-size: 22px;
+        font-weight: bold;
+        color: $color-primario;
 }
 
 .container {
@@ -61,23 +82,45 @@ header {
 
 nav {
     .nav-list {
+        display: flex;
         list-style: none;
         margin: 0;
         padding: 0;
         gap: 15px;
       
     li a {
-        color: white;
+        color: $color-primario;
         text-decoration: none;
-        font-weight: bold;
-        
+        font-weight: 600;
+        transition: color 0.3s ease;
+
     &:hover {
-            text-decoration: underline;
+        color: $color-secundario    
+        text-decoration: underline;
           } 
          }
         } 
        }    
-      
+
+#menu-toggle {
+    display: none;
+
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        .menu-icon  {
+            display: block;
+        }
+    }
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
 
 //seccion hero
 .hero {
@@ -126,9 +169,9 @@ nav {
     }
 
     button {
-    background-color: $color-principal;
+    background-color: $color-primario;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
