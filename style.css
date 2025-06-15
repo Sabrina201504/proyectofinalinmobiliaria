@@ -1650,13 +1650,16 @@ input:focus, textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b30000; /* o el rojo que estés usando */
+  background-color: #b30000;
   padding: 15px 20px;
 }
 
 .logo {
   font-size: 20px;
   font-weight: bold;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  line-height: 1;
 }
 
 .nav-links {
