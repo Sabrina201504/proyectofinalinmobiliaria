@@ -1692,6 +1692,7 @@ input:focus, textarea:focus {
   padding: 10px 0;
   font-size: 18px;
   text-decoration: none;
+  text-align: left;
 }
 
 .nav-links a:hover {
@@ -1714,10 +1715,12 @@ input:focus, textarea:focus {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 20px;
-    background-color: #fff;
+    left: 15px;
+    right: 15px;
+    background-color: #b30000;
     padding: 10px;
-    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 999;
   }
 
   .nav-links.show {
