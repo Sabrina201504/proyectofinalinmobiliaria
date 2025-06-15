@@ -1662,8 +1662,8 @@ input:focus, textarea:focus {
 .nav-links {
   background-color: #b30000;
   border: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 10px;
   position: absolute;
   top: 60px;
@@ -1675,7 +1675,18 @@ input:focus, textarea:focus {
 
 .nav-links a {
   color: white;
-  padding: 8px 0;
+  padding: 10px 0;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links a {
+  color: white;
+  padding: 10px 0;
   font-size: 18px;
   text-decoration: none;
 }
