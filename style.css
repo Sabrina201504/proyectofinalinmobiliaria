@@ -1646,12 +1646,12 @@ input:focus, textarea:focus {
 }
 
 .navbar {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #b30000;
   padding: 15px 20px;
+  position: relative;
 }
 
 .logo {
@@ -1659,8 +1659,6 @@ input:focus, textarea:focus {
   font-weight: bold;
   color: white;
   font-family: 'Dancing Script', cursive;
-  line-height: 1;
-  margin-right: 20px;
   margin-left: auto;
 }
 
@@ -1706,9 +1704,6 @@ input:focus, textarea:focus {
   border: none;
   cursor: pointer;
   color: white;
-  position: absolute;
-  top: 15px;
-  right: 20px;
   z-index: 1000;
 }
 
