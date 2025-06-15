@@ -1646,11 +1646,12 @@ input:focus, textarea:focus {
 }
 
 .navbar {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  padding: 10px 20px;
+  background-color: #b30000; /* o el rojo que estés usando */
+  padding: 15px 20px;
 }
 
 .logo {
@@ -1671,10 +1672,15 @@ input:focus, textarea:focus {
 
 .menu-toggle {
   display: none;
-  font-size: 28px;
+  font-size: 24px;
   background: none;
   border: none;
   cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1000;
 }
 
 /* Responsive */
