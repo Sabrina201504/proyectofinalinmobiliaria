@@ -374,6 +374,9 @@ main {
   color: white;
   position: relative;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  padding-top: 80px; /* 👈 esto es lo nuevo */
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .hero-contacto h1 {
